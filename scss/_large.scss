@@ -1,6 +1,8 @@
-header, nav, main {
-    max-width: 960px;
+header, nav, main, footer {
+    max-width: 60rem;
     margin: auto;
-}
-
-/* NAVIGATION STUFF GOES HERE  */
+  }
+  
+  .cardsWrapper {
+  flex-wrap: nowrap;
+  }

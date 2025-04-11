@@ -1,107 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Start file" />
-    <meta name="author" content="Olha Mykytka" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="High-performance sports cars for thrill-seekers." />
+  <meta name="author" content="Olha Mykytka" />
+  <title>Sports Cars</title>
 
-    <title>Auto</title>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Signika+Negative:wght@300..700&display=swap" rel="stylesheet">
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Signika+Negative:wght@300..700&display=swap" rel="stylesheet">
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-    <!-- Styles -->
-    <link rel="stylesheet" href="css/styles.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-
-    <!-- Inline CSS for nav toggle -->
-    <style>
-      #mainNav {
+  <!-- Nav Toggle CSS -->
+  <style>
+    #mainNav {
+      display: none;
+    }
+    #mainNav.open {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    #hamb {
+      font-size: 2rem;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+    @media (min-width: 768px) {
+      #hamb {
         display: none;
       }
-
-      #mainNav.open {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        margin-top: 1rem;
+      #mainNav {
+        display: flex !important;
+        flex-direction: row;
+        gap: 2rem;
       }
+    }
+  </style>
+</head>
 
-      #ham {
-        font-size: 2rem;
-        background: none;
-        border: none;
-        cursor: pointer;
-      }
+<body>
+  <div id="headerWrapper">
+    <header>
+      <div>
+        <img 
+          src="images/logo1x.png"
+          srcset="images/logo1x.png 1x, images/logo2x.png 2x, images/logo3x.png 3x"
+          alt="Logo"
+          width="64"
+          height="64"
+        />
+      </div>
+      <a href="tel:+9340000000">9340000000</a>
+    </header>
+  </div>
 
-      @media (min-width: 768px) {
-        #ham {
-          display: none;
-        }
+  <div id="navWrapper">
+    <button id="hamb"><span>&#9776;</span><span>x</span></button>
+    <nav id="mainNav">
+      <a class="active" href="#">Home</a>
+      <a href="#">Service</a>
+      <a href="#">Cars</a>
+    </nav>
+  </div>
 
-        #mainNav {
-          display: flex !important;
-          flex-direction: row;
-          gap: 2rem;
-        }
-      }
-    </style>
-  </head>
-
-  <body>
-    <div id="headerWrapper">
-      <header>
-        <a href="index.html">
-          <img src="images/logo1x.png" alt="logo" width="50" height="50"
-            srcset="images/logo1x.png 1x, images/logo2x.png 2x, images/logo3x.png 3x">
-        </a>
-        <h1>Sports Cars</h1>
-      </header>
-    </div>
-
-    <div id="navWrapper">
-      <button id="ham" aria-label="Menu Toggle">&#9776;</button>
-      <nav id="mainNav">
-        <a class="active" href="#">Home</a>
-        <a href="#">Cars</a>
-        <a href="#">Service</a>
-      </nav>
-    </div>
-
-    
-
-<div id="mainWrapper">
+  <div id="mainWrapper">
     <main>
+      <div class="heroWrapper">
+        <img
+          src="images/hero.webp"
+          alt="Sports cars"
+          title="sports cars"
+          width="1920"
+          height="720"
+        />
+        <h2>Premium sports cars</h2>
+      </div>
 
-        <h1>Services</h1>
-   
-        <p>Competently myocardinate cross-media infomediaries via end-to-end architectures. Enthusiastically implement end-to-end functionalities vis-a-vis excellent strategic theme areas. Conveniently supply enterprise action items with integrated innovation. Authoritatively cultivate sustainable portals for orthogonal core competencies. Distinctively coordinate team driven portals rather than synergistic processes.</p>
+      <h3>Looking for a sports car?</h3>
+      <p>We offer a range of fast, high-performance sports cars for those who crave speed, style, and an unforgettable driving experience.</p>
 
-        <p>Appropriately simplify enterprise information via leveraged total linkage. Progressively grow installed base infrastructures without open-source technologies. Distinctively embrace mission-critical internal or "organic" sources after competitive imperatives. Professionally whiteboard state of the art models through high-payoff expertise. Authoritatively exploit transparent users through virtual channels.</p>
+      <div class="cardsWrapper">
+        <section class="spin">
+          <img src="svg/engine.svg" alt="engine icon">
+          <h4>Performance</h4>
+          <p>From turbocharged engines to race-inspired suspension, our cars are built to thrill. Feel the power with every push of the pedal.</p>
+          <button><a href="#">Explore Models</a></button>
+        </section>
 
-        <p>Interactively transition user-centric web services without scalable collaboration and idea-sharing. Holisticly restore next-generation data before seamless expertise. Monotonectally grow synergistic synergy without bricks-and-clicks ROI. Uniquely optimize 24/365 convergence after integrated synergy. Distinctively synthesize high-quality methodologies for performance based bandwidth.</p>
+        <section class="pop">
+          <img src="svg/design.svg" alt="design icon">
+          <h4>Style</h4>
+          <p>Turn heads with sleek lines, bold colors, and a look that screams speed. Every model is designed with attention to detail and style.</p>
+          <button><a href="#">View Gallery</a></button>
+        </section>
 
-     
+        <section class="diagonal">
+          <img src="svg/speedometer.svg" alt="speedometer icon">
+          <h4>Speed</h4>
+          <p>Get from 0 to 60 in seconds. Whether you're on the track or on the street, our lineup delivers unmatched speed and acceleration.</p>
+          <button><a href="#">Feel the Rush</a></button>
+        </section>
 
+        <section class="shake">
+          <img src="svg/warranty.svg" alt="shield icon for warranty">
+          <h4>Reliability</h4>
+          <p>All our vehicles come with extended warranties and proven reliability. Drive with confidence knowing you're backed by quality and care.</p>
+          <button><a href="#">Drive Confidently</a></button>
+        </section>
+      </div>
+
+      <div class="reviews">
+        <h3>What Customers Have to Say</h3>
+        <div class="reviewCards"></div>
+      </div>
     </main>
-</div><!-- end main wrapper -->
-    
-<div id="footerWrapper">
-    <footer>
-        <p class="legal">© <span id="year">2025</span> | Olha Mykytka</p>
-      </footer>
-    </div>
+  </div>
 
-    <script src="js/scripts.js"></script>
-  </body>
+  <div id="footerWrapper">
+    <footer>
+      <p class="legal">© <span id="year">2025</span> | Olha Mykytka</p>
+    </footer>
+  </div>
+
+  <!-- Load your JS module -->
+  <script type="module" src="js/scripts.js"></script>
+</body>
 </html>

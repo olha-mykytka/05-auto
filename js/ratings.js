@@ -1,22 +1,23 @@
 export const reviews = [
     {
-        "name" : "Sully",
-        "stars" : 5,
-        "text" : "The sports car auto sales place offers a wide selection of high-performance vehicles for enthusiasts."
+      "name": "Ava",
+      "stars": 5,
+      "text": "I walked in just to look and walked out with my dream car. Fast, sleek, and the sales team actually listens!"
     },
     {
-        "name" : "Mike",
-        "stars" : 1,
-        "text" : "All the counters in this place are too short, I couldn't see over any of them."
+      "name": "Leo",
+      "stars": 3,
+      "text": "The cars were cool, but the coffee in the waiting area was colder than my ex. Needs improvement."
     },
     {
-        "name" : "Dash",
-        "stars" : 3,
-        "text" : "The cars look cool, but I feel like I can run faster than all of them. Except for the Corolla that is."
+      "name": "Nina",
+      "stars": 4,
+      "text": "Honestly, I came for the test drive and stayed for the leather seats. Could’ve used more color options, though."
     },
     {
-        "name" : "Violet",
-        "stars" : 4,
-        "text" : "They told me I had to leave because I kept making myself invisible to hide from the bad guys. Cheap cars though."
-    },
-]
+      "name": "Max",
+      "stars": 2,
+      "text": "I asked for a car that makes me look cool. They gave me a minivan. Not sure where the wires got crossed."
+    }
+  ]
+  
