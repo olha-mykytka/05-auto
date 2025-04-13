@@ -1,31 +1,36 @@
-header {
-    padding: 2rem $gutter;
-    h1 {
+@media (min-width: 768px) and (max-width: 1023px) {
+    header {
+      padding: 2rem $gutter;
+  
+      h1 {
         font-size: 2rem;
+      }
     }
-}
-
-#navWrapper button {
-    display: none;
-}
-
-nav {
-    padding: 0 $gutter;
-    display: flex;
-    flex-direction: row;
-    a {
+  
+    #navWrapper button {
+      display: none;
+    }
+  
+    nav {
+      padding: 0 $gutter;
+      display: flex !important;
+      flex-direction: row;
+  
+      a {
         max-width: min-content;
+      }
     }
-}
-
-.cardsWrapper {
-margin: auto;
-}
-.cardsWrapper section {
-    flex-basis: calc(50% - $gutter);
-}
-
-.reviewCards section {
-    flex-basis: 30%;
-
-}
+  
+    .cardsWrapper {
+      margin: auto;
+    }
+  
+    .cardsWrapper section {
+      flex-basis: calc(50% - $gutter);
+    }
+  
+    .reviewCards section {
+      flex-basis: 30%;
+    }
+  }
+  

@@ -25,3 +25,10 @@ for (let i = 0; i < reviews.length; i++) {
   card.appendChild(text);
   reviewCards.appendChild(card);
 }
+const button = document.querySelector("#hamb");
+const nav = document.querySelector("#mainNav");
+
+button.addEventListener("click", () => {
+  button.classList.toggle("open");
+  nav.classList.toggle("open");
+});

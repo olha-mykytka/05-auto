@@ -52,55 +52,70 @@ header {
   }
 }
 
-// NAVIGATION
-#navWrapper {
-  background-color: $accentColor;
 
-  button {
-    background: none;
-    border: none;
-    font-size: 2rem;
-    color: $secondaryColor;
-    padding: 0.5rem $gutter;
-
-    span:nth-child(2) {
-      display: none;
-    }
-
-    &.open {
-      span:nth-child(1) {
+  #navWrapper {
+    background-color: $accentColor;
+  
+    button {
+      background: none;
+      border: none;
+      font-size: 2rem;
+      color: $secondaryColor;
+      padding: 0.5rem $gutter;
+  
+      span:nth-child(2) {
         display: none;
       }
-      span:nth-child(2) {
-        display: block;
+  
+      &.open {
+        span:nth-child(1) {
+          display: none;
+        }
+        span:nth-child(2) {
+          display: block;
+        }
       }
     }
   }
-}
-
-nav {
-  display: none;
-  flex-direction: column;
-
-  &.open {
-    display: flex;
-  }
-
-  a {
-    padding: 1rem;
-    text-align: center;
-    text-decoration: none;
-    color: $secondaryColor;
-
-    &:hover {
-      background-color: darken($accentColor, 10%);
+  
+  #mainNav {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+  
+    &.open {
+      display: flex;
     }
-
-    &.active {
-      background-color: $primaryColor;
+  
+    a {
+      padding: 1rem;
+      text-align: center;
+      text-decoration: none;
+      color: $secondaryColor;
+  
+      &:hover {
+        background-color: darken($accentColor, 10%);
+      }
+  
+      &.active {
+        background-color: $primaryColor;
+      }
     }
   }
-}
+  
+  // === Add this media query to handle tablet and desktop ===
+  @media (min-width: 768px) {
+    #hamb {
+      display: none;
+    }
+  
+    #mainNav {
+      display: flex !important;
+      flex-direction: row;
+      justify-content: center;
+      gap: 2rem;
+    }
+  }
 
 // HERO
 .heroWrapper {
